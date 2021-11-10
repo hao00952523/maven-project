@@ -13,8 +13,8 @@ public class Person {
   }
 
   /**
-   * @param someone¬O¤H¦W
-   * @return ¦r²Å¦ê
+   * @param someone æ˜¯äººå
+   * @return å­—ç¬¦ä¸²
    */
   public final String person(final String someone) {
     return String.format("Hello, %s!", someone);
