@@ -7,8 +7,10 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                //sh 'mvn clean package'
-                echo '123456'
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                '''
             }
             post {
                 success {
