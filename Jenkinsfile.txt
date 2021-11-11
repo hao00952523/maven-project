@@ -25,18 +25,18 @@ pipeline {
         stage ('Deploy to Production'){
             steps{
                 timeout(time:5, unit:'DAYS'){
-                    input message:'是否部署到生产环境?' 
+                    input message:'是否部屬到生產環境?' 
                 }
 
                 build job: 'deploy-to-production'
             }
             post {
                 success {
-                    echo '代码成功部署到生产环境'
+                    echo '代碼成功部屬到生產還進境'
                 }
 
                 failure {
-                    echo ' 部署失败'
+                    echo '部屬失敗'
                 }
             }
         }
